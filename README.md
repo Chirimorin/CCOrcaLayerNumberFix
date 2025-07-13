@@ -1,3 +1,13 @@
+# This script is obsolete
+
+Instead of using a post-processing script, you can simply make these changes to your Orca settings instead:
+
+Add to bottom of Machine Start G-code:  
+`SET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count]`
+
+Add to Layer Change G-code:  
+`SET_PRINT_STATS_INFO CURRENT_LAYER={layer_num + 1}`
+
 # CCOrcaLayerNumberFix
 Post-processing script for OrcaSlicer to make layer numbers work on the Elegoo Centauri Carbon
 
